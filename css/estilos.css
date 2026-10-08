@@ -1,0 +1,398 @@
+/* Importar tipografía Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/* Reset y base */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  padding: 0 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 1.7;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Flotante (Glassmorphism) */
+header {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  margin-bottom: 2rem;
+}
+
+.dark header {
+  background: rgba(30, 35, 45, 0.75);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--color-primario);
+}
+
+/* Botones de Control */
+#dark-mode-toggle, #hamburger-btn {
+  background: var(--color-tarjeta);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-texto);
+  transition: all 0.2s ease;
+}
+
+#dark-mode-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra);
+}
+
+#hamburger-btn {
+  display: none;
+}
+
+/* Secciones Generales */
+main section {
+  margin: 5rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40%;
+  height: 4px;
+  background: var(--color-primario);
+  border-radius: 2px;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top, rgba(0, 102, 255, 0.08) 0%, transparent 70%);
+  border-radius: 24px;
+}
+
+#hero h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+#hero h2::after {
+  display: none;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grillas de Contenido (Proyectos y Testimonios) */
+.grid-proyectos, 
+.grid-feedback {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Tarjetas de Proyecto */
+.proyecto {
+  background-color: var(--color-tarjeta);
+  padding: 1.25rem;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .proyecto {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.proyecto:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primario);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto .imagen-contenedor {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.proyecto .imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.proyecto h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primario);
+}
+
+.proyecto p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.proyecto .tecnologias {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.proyecto .tecnologias span {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.proyecto .enlaces {
+  display: flex;
+  gap: 1rem;
+}
+
+.proyecto .enlaces a {
+  text-decoration: none;
+  color: var(--color-primario);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.proyecto .enlaces a:hover {
+  text-decoration: underline;
+}
+
+/* Tarjetas de Feedback / Testimonios */
+.tarjeta-feedback {
+  background-color: var(--color-tarjeta);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border-left: 5px solid var(--color-primario);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.tarjeta-feedback p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.tarjeta-feedback cite {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-primario);
+  display: block;
+}
+
+/* Chips de Habilidades */
+#habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+#habilidades li {
+  background: var(--color-tarjeta);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 550px;
+  background: var(--color-tarjeta);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive (< 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 0 0.8rem;
+  }
+
+  header {
+    flex-wrap: wrap;
+    padding: 0.8rem 1rem;
+    top: 0.5rem;
+  }
+
+  #hamburger-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 0.8rem;
+    background: var(--color-tarjeta);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  main section {
+    margin: 2.5rem 0;
+  }
+
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid-proyectos, 
+  .grid-feedback {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  form {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  input, textarea, button {
+    font-size: 16px; /* Evita auto-zoom en móviles */
+  }
+}

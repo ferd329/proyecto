@@ -1,0 +1,17 @@
+:root {
+  --color-primario: hsl(212, 88%, 51%);
+  --color-fondo: hsl(180, 100%, 100%);
+  --color-tarjeta: rgba(55, 228, 12, 0);
+  --color-texto: hsl(220, 15%, 20%);
+  --color-acento: hsl(29, 98%, 51%);
+  --font-principal: 'Inter', system-ui, sans-serif;
+  --radio: 8px;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --color-fondo: hsl(220, 15%, 15%);
+  --color-tarjeta: hsl(220, 15%, 22%);
+  --color-texto: hsl(0, 0%, 95%);
+  --color-primario: hwb(0 3% 7%);
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Desarrollador FullStack.">
+  <title>Mi Portafolio — Desarrollador FullStack</title>
+  
+  <link rel="stylesheet" href="css/00-reset.css">
+  <link rel="stylesheet" href="css/01-variables.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header>
+    <h1>Mi proyecto final</h1>
+    <button id="hamburger-btn" aria-label="Abrir menú">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#trayectoria">Trayectoia</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" aria-label="Cambiar modo oscuro">🌙 Modo</button>
+  </header>
+
+  <main id="main">
+    <section id="hero">
+      <h2>¡Hola! Soy Ferrer Gil Desarrollador Fullstack Jr.</h2>
+      <p>Un gran poder conlleva una gran responsabilidad</p>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Soy ferrer y actualmente soy programador web y estudio en el cecyt No 3 una de las actividades que me gusta realizar esta el diseñar paginas web ademas de crear bases de datos en MARIA DB (Mysql),utilizar tinkercad para realizar cirucuitos electronicos en Arduino uno, Progamar y diseñar en codigo Java Script utlizando nethbeans donde utlizo herramientas tales como ciclos repetitivos, arreglos unidimensionales y la parte grafica </p>
+      <p>Y por ultimo diseño imagenes y animaciones en Opentoonz,conozco la estrucura detallada de la computadora y realizo mantenimiento preventivo y correctivo a las mismas y diseño redes de comunicaciones con el estandar del modelo OSI</p>
+    </section>
+
+    <section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="grid-proyectos">
+
+    <!-- Proyecto 1 -->
+    <article class="proyecto">
+      <div class="imagen-contenedor">
+        <img src="imagenes/proyecto1.png" alt="Vista previa del Proyecto 1">
+      </div>
+      <h3>Página Web Personal</h3>
+      <p>Sitio web informativo y accesible para presentar perfil profesional y proyectos destacados.</p>
+      <div class="tecnologias">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="enlaces">
+        <a href="https://github.com/tu-usuario/proyecto1" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://tu-usuario.github.io/proyecto1" target="_blank" rel="noopener">Demo</a>
+      </div>
+    </article>
+
+    <!-- Proyecto 2 -->
+    <article class="proyecto">
+      <div class="imagen-contenedor">
+        <img src="imagenes/proyecto2.png" alt="Vista previa del Proyecto 2">
+      </div>
+      <h3>Página Web Interactiva</h3>
+      <p>Sitio web moderno enfocado en la experiencia de usuario y optimizado para dispositivos móviles.</p>
+      <div class="tecnologias">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="enlaces">
+        <a href="https://github.com/tu-usuario/proyecto2" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://tu-usuario.github.io/proyecto2" target="_blank" rel="noopener">Demo</a>
+      </div>
+    </article>
+
+    <!-- Proyecto 3 -->
+    <article class="proyecto">
+      <div class="imagen-contenedor">
+        <img src="imagenes/proyecto3.jpeg" alt="Vista previa del Proyecto 3">
+      </div>
+      <h3>Página Web Corporativa</h3>
+      <p>Landing page empresarial orientada a la presentación de servicios y captura de mensajes de clientes.</p>
+      <div class="tecnologias">
+        <span>HTML5</span>
+        <span>CSS3</span>
+      </div>
+      <div class="enlaces">
+        <a href="https://github.com/tu-usuario/proyecto3" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://tu-usuario.github.io/proyecto3" target="_blank" rel="noopener">Demo</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+    
+    <section id="habilidades" class="skills-section">
+  <h2>Habilidades</h2>
+
+  <!-- Categoría: Frontend -->
+  <div class="skill-category">
+    <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+    <ul class="skills-list">
+      <li><i class="fa-brands fa-html5"></i> HTML5 Semántico</li>
+      <li><i class="fa-brands fa-css3-alt"></i> CSS3 (Flexbox, Grid, Variables)</li>
+      <li><i class="fa-brands fa-square-js"></i> JavaScript ES6+</li>
+    </ul>
+  </div>
+
+  <!-- Categoría: Backend y Bases de Datos -->
+  <div class="skill-category">
+    <h3><i class="fa-solid fa-server"></i> Backend &amp; Bases de Datos</h3>
+    <ul class="skills-list">
+      <li><i class="fa-brands fa-java"></i> Java (GUI &amp; Lógica)</li>
+      <li><i class="fa-solid fa-database"></i> MariaDB / MySQL</li>
+    </ul>
+  </div>
+
+  <!-- Categoría: Electrónica y Hardware -->
+  <div class="skill-category">
+    <h3><i class="fa-solid fa-microchip"></i> Electrónica &amp; Hardware</h3>
+    <ul class="skills-list">
+      <li><i class="fa-solid fa-circuit-board"></i> Arduino Uno</li>
+      <li><i class="fa-solid fa-cubes"></i> Tinkercad</li>
+      <li><i class="fa-solid fa-wrench"></i> Mantenimiento Preventivo / Correctivo</li>
+    </ul>
+  </div>
+
+  <!-- Categoría: Redes y Herramientas -->
+  <div class="skill-category">
+    <h3><i class="fa-solid fa-network-wired"></i> Redes &amp; Herramientas</h3>
+    <ul class="skills-list">
+      <li><i class="fa-brands fa-git-alt"></i> Git y GitHub</li>
+      <li><i class="fa-solid fa-diagram-project"></i> Modelo OSI</li>
+      <li><i class="fa-solid fa-laptop-code"></i> NetBeans IDE</li>
+    </ul>
+  </div>
+
+  <!-- Categoría: Diseño y Multimedia -->
+  <div class="skill-category">
+    <h3><i class="fa-solid fa-palette"></i> Diseño &amp; Multimedia</h3>
+    <ul class="skills-list">
+      <li><i class="fa-solid fa-film"></i> OpenToonz</li>
+      <li><i class="fa-solid fa-wand-magic-sparkles"></i> Animación y Diseño 2D</li>
+    </ul>
+  </div>
+</section>
+
+<section id="trayectoria"> 
+    <h2>Trayectoria</h2>
+    <p>Durante mi trayectoria en el área de la tecnología me he enfocado en comprender los sistemas informáticos de manera integral, abarcando desde la infraestructura física hasta el desarrollo de software y la creación digital. En el ámbito de la informática y las redes, cuento con conocimientos sólidos sobre la estructura interna de las computadoras, lo que me permite realizar labores de mantenimiento preventivo y correctivo de hardware, así como diseñar arquitecturas de redes de comunicaciones estructuradas bajo los estándares del modelo OSI.</p>
+    
+    <p>En cuanto al desarrollo de lógica y programación, diseño e implemento aplicaciones utilizando Java y JavaScript mediante el entorno de desarrollo NetBeans, integrando lógica estructurada con ciclos repetitivos, manejo de datos mediante arreglos unidimensionales y la creación de interfaces gráficas funcionales. Asimismo, administro el almacenamiento persistente de información a través del diseño y gestión de bases de datos relacionales en MariaDB y MySQL.</p>                                              
+    <p>Mi formación técnica se complementa con el prototipado electrónico y la creación multimedia: utilizo Tinkercad para la simulación y diseño de circuitos aplicados a microcontroladores Arduino Uno, maquetación web en HTML5 y CSS3 con control de versiones en Git y GitHub, además de la elaboración de diseños gráficos y animaciones 2D mediante la herramienta OpenToonz.</p>
+</section>
+
+<section id="feedback">
+  <h2>Feedback </h2>
+  <p>¿Probaste el sitio? Déjame tu comentario para mejorar la experiencia.</p>
+  
+  <!-- Formulario directo sin cuentas externas -->
+  <form id="feedback-form">
+    <label for="autor-feedback">Tu Nombre y Rol (ej. Juan ):</label>
+    <input type="text" id="autor-feedback" placeholder="Ej. Ana Martínez - Desarrolladora" required>
+
+    <label for="comentario-feedback">Tu Retroalimentación / Opinión:</label>
+    <textarea id="comentario-feedback" rows="3" placeholder="Escribe tu opinión sobre el sitio..." required></textarea>
+
+    <button type="submit">Publicar Feedback</button>
+  </form>
+
+  <!-- Lista donde se muestran los comentarios en tiempo real -->
+  <div id="lista-feedback" class="grid-feedback"></div>
+</section>
+
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ferrer Gil. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
